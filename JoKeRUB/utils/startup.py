@@ -99,8 +99,8 @@ async def startupmessage():
             Config.CATUBLOGO = await l313l.tgbot.send_file(
                 BOTLOG_CHATID,
                 "https://t.me/MemeSoundJep/24",
-                caption="**‏᯽︙ بــوت الجوكر يـعـمـل بـنـجـاح ✓ \n᯽︙ أرسل `.الاوامر`لرؤية اوامر السورس \n  ᯽︙ لأستعمال بوت الأختراق عبر كود التيرمكس أرسل`.هاك`**",
-                buttons=[(Button.url("سورس الجوكر", "https://t.me/jepthon"),)],
+                caption="**‏᯽︙ بۆتی زیرەك بە سەرکەوتوویی کاردەکات ✓ \n᯽︙ بنێرە `.فەرمان`بۆ بینینی فەرمانی سەرچاوە \n  ᯽︙ بۆ هاك کردن بنووسە .هاک`**",
+                buttons=[(Button.url("سەرچاوەی زیرەك", "https://t.me/MGIMT"),)],
             )
     except Exception as e:
         LOGS.error(e)
@@ -134,11 +134,11 @@ async def startupmessage():
 async def mybot():
     try:
         starkbot = await l313l.tgbot.get_me()
-        joker = "الجوكر 🤡"
+        joker = "ازیرەك"
         bot_name = starkbot.first_name
         botname = f"@{starkbot.username}"
         if bot_name.endswith("Assistant"):
-            print("تم تشغيل البوت")
+            print("بۆت کاردەکات")
         if starkbot.bot_inline_placeholder:
             print("Aljoker ForEver")
         else:
@@ -147,7 +147,7 @@ async def mybot():
                 await asyncio.sleep(1)
                 await l313l.send_message("@BotFather", botname)
                 await asyncio.sleep(1)
-                await l313l.send_message("@BotFather", joker)
+                await l313l.send_message("@BotFather", IQBOT)
                 await asyncio.sleep(2)
             except Exception as e:
                 print(e)
