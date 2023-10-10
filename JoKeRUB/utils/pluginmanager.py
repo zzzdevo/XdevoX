@@ -26,7 +26,7 @@ def load_module(shortname, plugin_path=None):
         spec = importlib.util.spec_from_file_location(name, path)
         mod = importlib.util.module_from_spec(spec)
         spec.loader.exec_module(mod)
-        LOGS.info("᯽︙تم بنجاح تحميل ملف " + shortname)
+        LOGS.info("᯽︙سەرکەوتووبوو لە داگرتنی فایلەکان ✓ " + shortname)
     else:
         if plugin_path is None:
             path = Path(f"JoKeRUB/plugins/{shortname}.py")
@@ -58,7 +58,7 @@ def load_module(shortname, plugin_path=None):
         spec.loader.exec_module(mod)
         # for imports
         sys.modules["JoKeRUB.plugins." + shortname] = mod
-        LOGS.info("᯽︙تم بنجاح تحميل ملف ✓" + shortname)
+        LOGS.info("᯽︙سەرکەوتووبوو لە داگرتنی فایلەکان ✓" + shortname)
 
 
 def remove_plugin(shortname):
@@ -116,7 +116,7 @@ def start_assistant(shortname):
         spec = importlib.util.spec_from_file_location(name, path)
         mod = importlib.util.module_from_spec(spec)
         spec.loader.exec_module(mod)
-        print("يتم تشغيل البوت المساعد.")
+        print("بۆتی یارمەتی دەر کاری کرد")
         print("بنجاح تم استدعاء " + shortname)
     else:
         import importlib
@@ -130,4 +130,4 @@ def start_assistant(shortname):
         mod.tgbot = bot.tgbot
         spec.loader.exec_module(mod)
         sys.modules["JoKeRUB.plugins.assistant" + shortname] = mod
-        print("بنجاح يتم تحميل " + shortname)
+        print("᯽︙سەرکەوتووبوو لە داگرتنی فایلەکان ✓" + shortname)
