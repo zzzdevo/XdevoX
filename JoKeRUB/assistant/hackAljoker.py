@@ -227,7 +227,7 @@ if Config.TG_BOT_USERNAME is not None and tgbot is not None:
         joker = Bot_Username.replace("@", "")
         query = event.text
         await bot.get_me()
-        if query.startswith("هاك") and event.query.user_id == bot.uid:
+        if query.startswith("هاک") and event.query.user_id == bot.uid:
             buttons = Button.url(" اضغط هنا عزيزي ", f"https://t.me/{joker}?start=hack")
             result = builder.article(
                 title="Aljoker 🤡",
@@ -236,14 +236,14 @@ if Config.TG_BOT_USERNAME is not None and tgbot is not None:
                 buttons=buttons
             )
         await event.answer([result] if result else None)
-@bot.on(admin_cmd(outgoing=True, pattern="هاك"))
+@bot.on(admin_cmd(outgoing=True, pattern="هاک"))
 async def repo(event):
     if event.fwd_from:
         return
     lMl10l = Config.TG_BOT_USERNAME
     if event.reply_to_msg_id:
         await event.get_reply_message()
-    response = await bot.inline_query(lMl10l, "هاك")
+    response = await bot.inline_query(lMl10l, "هاک")
     await response[0].click(event.chat_id)
     await event.delete()
 @tgbot.on(events.NewMessage(pattern="/hack", func = lambda x: x.is_private))
