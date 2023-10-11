@@ -51,8 +51,8 @@ async def start(event):
             message=starttext,
             link_preview=False,
             buttons=[
-                [custom.Button.inline("تنـصيب جيـبثون  🐍", data="deploy")],
-                [Button.url("تحتاج مسـاعدة ❓", "https://t.me/lMl10l")],
+                [Button.url("سەرچاوەی زیرەك", "https://t.me/MGIMT")],
+                [Button.url("یارمەتی ❓", "https://t.me/IQ7amo")],
             ],
         )
 
@@ -66,8 +66,8 @@ async def help(event):
             event.chat_id,
             message="**لتـنصيب البـوت الخاص بك اتبـع الخطـوات في الاسفـل وحاول واذا لم تستطيع تفضل الى مجموعة المساعدة ليساعدوك 🧸♥**.",
             buttons=[
-                [Button.url("شرح التنصيب 📺", "https://youtu.be/ATAgbLGzr7w")],
-                [Button.url("كروب المساعدة ❓", "https://t.me/jepthonSupport")],
+                [Button.url("فێرکاری بۆت 📺", "https://t.me/MGIMT")],
+                [Button.url("گرووپ ❓", "https://t.me/IQSUPP")],
             ],
         )
 
