@@ -33,8 +33,8 @@ async def my_event_handler(event):
             await l313l.send_file(event.chat_id, "event_info.txt")
 
 @l313l.ar_cmd(
-    pattern="المطور$",
-    command=("المطور", plugin_category),
+    pattern="گەشەپێدەر$",
+    command=("گەشەپێدەر", plugin_category),
     info={
         "header": "لأظهار مطورين السورس",
         "usage": [
@@ -49,15 +49,15 @@ async def amireallyalive(event):
     _, check_sgnirts = check_data_base_heal_th()
     EMOJI = gvarstatus("ALIVE_EMOJI") or "  - "
     CUSTOM_ALIVE_TEXT = gvarstatus("ALIVE_TEXT")
-    CAT_IMG = " https://telegra.ph/file/83d3c9610bc957b20e35a.jpg "
+    CAT_IMG = "https://telegra.ph/file/616c5ecd8ca309314993f.jpg"
     if CAT_IMG:
         CAT = [x for x in CAT_IMG.split()]
         A_IMG = list(CAT)
         PIC = random.choice(A_IMG)
-        cat_caption = f"مطورين الجوكر\n"
+        cat_caption = f"گەشەپێدەرانی زیرەك\n"
         cat_caption += f"✛━━━━━━━━━━━━━✛\n"
-        cat_caption += f"- المطور  : @lMl10l\n"
-        cat_caption += f"- المطور  : @rd0r0\n"
+        cat_caption += f"- سەرۆک  : @IQ7amo\n"
+        cat_caption += f"- گەشەپێدەر  : @VTVIT\n"
         cat_caption += f"✛━━━━━━━━━━━━━✛\n"
         await event.client.send_file(
             event.chat_id, PIC, caption=cat_caption, reply_to=reply_to_id
