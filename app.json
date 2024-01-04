@@ -4,9 +4,8 @@
   "logo": "https://telegra.ph/file/83ee584aef1c4db1d9597.jpg",
   "keywords": ["plugin", "modular", "productivity"],
   "repository": "https://github.com/jepthoniq/lMl10l/",
-  "website": "#TODO",
-  "success_url": "#TODO",
-  "env": {
+  "stack": "container",
+    "env": {
     "ALIVE_NAME": {
       "description": "هنا ضع اسم التلجرام الخاص بك",
       "value": ""
@@ -52,37 +51,6 @@
     "options": {
       "version": "12"
     }
-  }],
-  "buildpacks": [
-    {
-      "url": "https://github.com/jepthoniq/heroku-buildpack-ffmpeg-latest"
-    },
-    {
-      "url": "https://github.com/heroku/heroku-buildpack-google-chrome"
-    },
-    {
-      "url": "https://github.com/heroku/heroku-buildpack-chromedriver"
-    },
-    {
-      "url": "https://github.com/riganf/heroku-buildpack-p7zip"
-    },
-    {
-      "url": "https://github.com/rahulps1000/heroku-buildpack-nodejs"
-    },
-    {
-      "url": "https://github.com/heroku/heroku-buildpack-apt.git"
-    },
-    {
-      "url": "https://github.com/chrismytton/heroku-buildpack-jq"
-    },
-    {
-      "url": "heroku/python"
+
     }
-  ],
-  "formation": {
-    "worker": {
-      "quantity": 1
-    }
-  },
-  "stack": "heroku-22"
-}
+  }
