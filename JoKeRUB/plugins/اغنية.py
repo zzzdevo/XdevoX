@@ -33,7 +33,7 @@ SONG_SENDING_STRING = "<code>جارِ الارسال انتظر قليلا...</c
 # =========================================================== #
 
 @l313l.ar_cmd(
-    pattern="بحث(320)?(?:\s|$)([\s\S]*)",
+    pattern="گۆرانی(320)?(?:\s|$)([\s\S]*)",
     command=("بحث", plugin_category),
     info={
         "header": "To get songs from youtube.",
@@ -114,7 +114,7 @@ async def _(event):
 
 
 @l313l.ar_cmd(
-    pattern="فيديو(?:\s|$)([\s\S]*)",
+    pattern="ڤیسیۆ(?:\s|$)([\s\S]*)",
     command=("فيديو", plugin_category),
     info={
         "header": "To get video songs from youtube.",
